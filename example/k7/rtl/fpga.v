@@ -456,7 +456,21 @@ ten_gig_eth_pcs_pma_inst (
 
     .drp_req(drp_gnt),
     .drp_gnt(drp_gnt),
-
+    
+    .drp_den_o(gt_drpen),
+    .drp_dwe_o(gt_drpwe),
+    .drp_daddr_o(gt_drpaddr),
+    .drp_di_o(gt_drpdi),
+    .drp_drdy_o(gt_drprdy),
+    .drp_drpdo_o(gt_drpdo),
+    
+    .drp_den_i(gt_drpen),
+    .drp_dwe_i(gt_drpwe),
+    .drp_daddr_i(gt_drpaddr),
+    .drp_di_i(gt_drpdi),
+    .drp_drdy_i(gt_drprdy),
+    .drp_drpdo_i(gt_drpdo),
+    
 //    .core_to_gt_drprdy(gt_drprdy),
 //    .core_to_gt_drpdo(gt_drpdo),
 //    .core_to_gt_drpen(gt_drpen),
